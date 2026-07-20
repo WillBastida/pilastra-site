@@ -1,0 +1,37 @@
+# Pilastra
+
+> Infraestrutura de IA privada e conforme para setores regulados no Brasil. Modelos de IA de ponta rodando em servidores brasileiros (região Sudeste), com camada de conformidade (ECA Digital, LGPD) embutida e preço fixo em reais. Primeira vertical: educação — escolas e edtechs que não podem enviar dados sensíveis de alunos para APIs estrangeiras.
+
+A Pilastra é a camada de software, confiabilidade e conformidade sobre modelos de IA abertos rodando em datacenters 100% no Brasil. Não usa conversas de alunos para treinar modelos. API compatível com OpenAI (migração = trocar a URL do endpoint). Operada pela Vrummm Tecnologia LTDA (CNPJ 37.442.535/0001-22), empresa constituída em 2020, sede em São Paulo — Rua Funchal, 538, Vila Olímpia.
+
+## O que a Pilastra oferece
+
+- **Para escolas:** plataforma pronta, whitelabel, com três telas — chat seguro para o aluno (filtros por faixa etária, login pela conta escolar, respostas baseadas no material da escola, horário definido pela coordenação), painel de supervisão para o professor (alertas de segurança, visão por turma, acesso a conversa individual só com justificativa registrada) e console de conformidade para a coordenação (consentimento parental, política de retenção, relatório mensal para o DPO, trilha de auditoria).
+- **Para edtechs:** motor de IA via API, whitelabel — um endpoint, preço fixo em real, compliance resolvido, para embarcar no produto que a edtech já vende.
+- **Para outros setores regulados (saúde, jurídico, financeiro):** desenho de solução sob demanda para infraestrutura de IA com dados sensíveis e controle sobre os dados dos clientes.
+
+## Posições públicas de conformidade (respostas às 7 perguntas)
+
+1. DPO nomeado e acessível, canal direto com escola e responsáveis.
+2. Base legal: consentimento parental registrado por aluno, revogável a qualquer tempo (ECA Digital, Lei nº 15.211/2025, e LGPD).
+3. As conversas dos alunos não saem do país — decisão de arquitetura, não obrigação legal.
+4. As conversas não são usadas para treinar modelos. Nunca.
+5. Retenção definida pela escola, com descarte automático e comprovado.
+6. Notificação de incidentes com prazo e responsável em contrato, com suporte à notificação à ANPD.
+7. Produto adequado ao ECA Digital de forma verificável (adequação e redução de risco — não selo ou certificação).
+
+## Dados citados no site
+
+- 7 em cada 10 alunos do Ensino Médio brasileiro já usam IA generativa para pesquisas escolares; apenas 32% receberam orientação da escola (TIC Educação 2024 — Cetic.br/NIC.br, divulgada em setembro de 2025).
+- Menos de 10% das escolas no mundo têm política formal sobre IA (UNESCO, 2023).
+
+## Contato
+
+- Site: https://pilastra.com.br/
+- E-mail: contato@pilastra.com.br
+- WhatsApp comercial: +55 11 98705-0864
+
+## Documentos para agentes
+
+- [Conteúdo completo do site em Markdown](https://pilastra.com.br/llms-full.txt)
+- [Sitemap](https://pilastra.com.br/sitemap.xml)

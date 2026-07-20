@@ -1,0 +1,14 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+
+# Node (se um dia houver tooling local)
+node_modules/
+
+# Logs e temporários
+*.log
+*.tmp
