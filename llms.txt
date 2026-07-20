@@ -2,7 +2,7 @@
 
 > Infraestrutura de IA privada e conforme para setores regulados no Brasil. Modelos de IA de ponta rodando em servidores brasileiros (região Sudeste), com camada de conformidade (ECA Digital, LGPD) embutida e preço fixo em reais. Primeira vertical: educação — escolas e edtechs que não podem enviar dados sensíveis de alunos para APIs estrangeiras.
 
-A Pilastra é a camada de software, confiabilidade e conformidade sobre modelos de IA abertos rodando em datacenters 100% no Brasil. Não usa conversas de alunos para treinar modelos. API compatível com OpenAI (migração = trocar a URL do endpoint). Operada pela Vrummm Tecnologia LTDA (CNPJ 37.442.535/0001-22), empresa constituída em 2020, sede em São Paulo — Rua Funchal, 538, Vila Olímpia.
+A Pilastra é a camada de software, confiabilidade e conformidade sobre modelos de IA abertos rodando em datacenters 100% no Brasil. Não usa conversas de alunos para treinar modelos. API compatível com OpenAI (migração = trocar a URL do endpoint). Operada pela Vrummm Tecnologia LTDA (CNPJ 37.442.535/0001-22), empresa constituída em 2020, sede em São Paulo — Avenida Giovanni Gronchi, 6195, Sala 310, Vila Andrade, CEP 05724-003.
 
 ## O que a Pilastra oferece
 
