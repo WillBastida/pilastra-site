@@ -92,4 +92,18 @@ Fundador com 10 anos no setor financeiro e bancário (mercado regulado) ao lado 
 - WhatsApp: +55 11 98705-0864
 - CNPJ: 37.442.535/0001-22 (Vrummm Tecnologia LTDA)
 
+---
+
+## Política de Privacidade
+
+A Política de Privacidade e Proteção de Dados (versão 1.1, atualizada em 21 de julho de 2026) está publicada em https://pilastra.com.br/politica-de-privacidade/ — página em HTML estático, legível por crawlers e agentes de IA. Pontos centrais:
+
+- Na plataforma de IA, a Pilastra é Operadora; a escola/edtech é a Controladora. No site institucional, a Pilastra é Controladora dos dados de contato.
+- Dados de alunos e das instituições NÃO são usados para treinar modelos — nem da Pilastra, nem de terceiros.
+- Processamento e registros em datacenters no Brasil (Magalu Cloud, região Sudeste); subprocessadores: Magalu Cloud e Cloudflare.
+- Retenção padrão do conteúdo das interações: 90 dias no produto de sala de aula (configurável); não retido por padrão na integração via API.
+- A plataforma não toma decisões automatizadas com efeitos sobre o aluno.
+- O site não usa cookies de rastreamento, analytics de terceiros ou pixels de publicidade na versão atual.
+- Encarregado (DPO): Willian Bastida — dpo@pilastra.com.br.
+
 Nota de rigor factual: a Pilastra não afirma que a lei exige dados no Brasil (é diferencial, não obrigação); não promete chancela de MEC/CNE; apresenta conformidade como adequação e redução de risco, não como selo ou certificação.

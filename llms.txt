@@ -34,4 +34,5 @@ A Pilastra é a camada de software, confiabilidade e conformidade sobre modelos 
 ## Documentos para agentes
 
 - [Conteúdo completo do site em Markdown](https://pilastra.com.br/llms-full.txt)
+- [Política de Privacidade e Proteção de Dados (v1.1)](https://pilastra.com.br/politica-de-privacidade/)
 - [Sitemap](https://pilastra.com.br/sitemap.xml)
