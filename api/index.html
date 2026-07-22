@@ -488,6 +488,18 @@ client = OpenAI(
         </div>
       </div>
       <div class="field">
+        <label for="a-canal">Como prefere que a gente retorne? <i>*</i></label>
+        <select id="a-canal" name="canal_preferido" required>
+          <option selected>E-mail</option>
+          <option>WhatsApp</option>
+          <option>Chamada de telefone</option>
+        </select>
+      </div>
+      <div class="field" id="a-fone-wrap" hidden>
+        <label for="a-fone" id="a-fone-label">Seu WhatsApp <i>*</i></label>
+        <input type="tel" id="a-fone" name="telefone" autocomplete="tel" placeholder="(11) 98765-4321" disabled>
+      </div>
+      <div class="field">
         <label for="a-empresa">Empresa <i>*</i></label>
         <input type="text" id="a-empresa" name="empresa" required autocomplete="organization" placeholder="Edtech, sistema de ensino ou plataforma">
       </div>
@@ -625,6 +637,20 @@ client = OpenAI(
     var emp = document.getElementById('a-empresa').value.trim();
     var usaIa = document.getElementById('a-usa-ia').value;
     document.getElementById('apiSubject').value = '[Edtech] ' + (emp || 'site') + ' — ' + usaIa;
+  });
+
+  /* Canal de retorno preferido */
+  var canal = document.getElementById('a-canal'),
+      foneWrap = document.getElementById('a-fone-wrap'),
+      foneLabel = document.getElementById('a-fone-label'),
+      fone = document.getElementById('a-fone');
+  canal.addEventListener('change', function(){
+    var wpp = canal.value === 'WhatsApp',
+        show = wpp || canal.value === 'Chamada de telefone';
+    foneWrap.hidden = !show;
+    fone.disabled = !show;
+    fone.required = show;
+    if (show){ foneLabel.innerHTML = (wpp ? 'Seu WhatsApp' : 'Telefone para a chamada') + ' <i>*</i>'; }
   });
 })();
 </script>

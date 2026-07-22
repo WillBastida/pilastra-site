@@ -596,6 +596,18 @@ footer{background:var(--footer);color:#8ba098}
         </div>
       </div>
       <div class="field">
+        <label for="h-canal">Como prefere que a gente retorne? <i>*</i></label>
+        <select id="h-canal" name="canal_preferido" required>
+          <option selected>E-mail</option>
+          <option>WhatsApp</option>
+          <option>Chamada de telefone</option>
+        </select>
+      </div>
+      <div class="field" id="h-fone-wrap" hidden>
+        <label for="h-fone" id="h-fone-label">Seu WhatsApp <i>*</i></label>
+        <input type="tel" id="h-fone" name="telefone" autocomplete="tel" placeholder="(11) 98765-4321" disabled>
+      </div>
+      <div class="field">
         <label for="h-inst">Instituição / empresa <i>*</i></label>
         <input type="text" id="h-inst" name="instituicao" required autocomplete="organization" placeholder="Escola ou empresa">
       </div>
@@ -728,6 +740,20 @@ footer{background:var(--footer);color:#8ba098}
   homeForm.addEventListener('submit', function(){
     var inst = document.getElementById('h-inst').value.trim();
     document.getElementById('homeSubject').value = '[Site] Contato geral — ' + (inst || 'site');
+  });
+
+  /* Canal de retorno preferido */
+  var canal = document.getElementById('h-canal'),
+      foneWrap = document.getElementById('h-fone-wrap'),
+      foneLabel = document.getElementById('h-fone-label'),
+      fone = document.getElementById('h-fone');
+  canal.addEventListener('change', function(){
+    var wpp = canal.value === 'WhatsApp',
+        show = wpp || canal.value === 'Chamada de telefone';
+    foneWrap.hidden = !show;
+    fone.disabled = !show;
+    fone.required = show;
+    if (show){ foneLabel.innerHTML = (wpp ? 'Seu WhatsApp' : 'Telefone para a chamada') + ' <i>*</i>'; }
   });
 })();
 </script>
