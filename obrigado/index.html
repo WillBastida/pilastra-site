@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mensagem recebida | Pilastra</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Mensagem recebida. Retornamos em até 1 dia útil.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='10.5' y='6.8' width='13.5' height='3' rx='0.7' fill='%23123f3a'/%3E%3Crect x='12.3' y='9.8' width='10' height='1.9' fill='%23123f3a'/%3E%3Crect x='13.5' y='11.7' width='8' height='23.3' fill='%23123f3a'/%3E%3Cpath d='M21.5 8.4 C33.8 8.4 40.2 13.4 40.2 19.2 C40.2 25 33.8 29.4 21.5 29.4 L21.5 23.8 C28.2 23.8 33.6 22.2 33.6 19.2 C33.6 16.2 28.2 14.3 21.5 14.3 Z' fill='%23123f3a'/%3E%3Crect x='12.3' y='35' width='10' height='2.1' fill='%23123f3a'/%3E%3Crect x='10.3' y='37.1' width='14.5' height='3.1' rx='0.8' fill='%23b85c33'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#123f3a;--concrete:#f4f1ea;--panel:#fbfaf6;--border:#ddd6c6;--border-soft:#e6e1d3;
+  --text:#272c2a;--body:#454b47;--muted:#666c67;--accent:#b85c33;--accent-hi:#9c4b26;
+  --display:'Archivo',system-ui,sans-serif;--serif:'Fraunces',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--concrete);color:var(--text);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.card{max-width:560px;background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:clamp(36px,6vw,56px);text-align:center;box-shadow:0 30px 70px -40px rgba(12,36,33,.3)}
+.ok{width:64px;height:64px;margin:0 auto;border-radius:50%;background:var(--petrol);display:flex;align-items:center;justify-content:center;color:#e2a276}
+h1{margin-top:26px;font:800 clamp(28px,4vw,36px)/1.1 var(--display);color:var(--petrol);letter-spacing:-.018em;text-wrap:balance}
+p{margin-top:16px;font-size:16.5px;line-height:1.65;color:var(--body)}
+a.btn{margin-top:30px;display:inline-flex;align-items:center;gap:9px;font:600 15px/1 var(--sans);border-radius:8px;padding:14px 24px;background:var(--accent);color:#fff;text-decoration:none;box-shadow:0 1px 2px rgba(12,36,33,.18)}
+a.btn:hover{background:var(--accent-hi)}
+a.ghost{background:transparent;color:var(--petrol);border:1px solid #c9c2b1;box-shadow:none;margin-left:10px}
+.fine{margin-top:22px;font:400 12.5px/1.6 var(--mono);color:#8f948e}
+.fine a{color:var(--accent-hi)}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="ok"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+  <h1>Recebido.</h1>
+  <p>Retornamos em até <b>1 dia útil</b>.</p>
+  <a class="btn" href="/">Voltar à home</a><a class="btn ghost" href="/confianca/">Central de Confiança</a>
+  <p class="fine">Dúvidas? <a href="mailto:contato@pilastra.com.br">contato@pilastra.com.br</a></p>
+</div>
+</body>
+</html>

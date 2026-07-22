@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central de Confiança — documentos e conformidade | Pilastra</title>
+<meta name="description" content="As 7 perguntas que toda escola deveria fazer a qualquer fornecedor de IA, respondidas por escrito — com política de privacidade, DPA, RIPD, termo de consentimento e protocolo de incidentes. DPO nomeado e acessível.">
+<link rel="canonical" href="https://pilastra.com.br/confianca/">
+<meta property="og:title" content="Central de Confiança — documentos e conformidade | Pilastra">
+<meta property="og:description" content="Confiança não se declara — se documenta. As 7 perguntas respondidas, a biblioteca de documentos e o DPO, sem fricção.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pilastra.com.br/confianca/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Pilastra">
+<meta property="og:image" content="https://pilastra.com.br/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Central de Confiança | Pilastra">
+<meta name="twitter:description" content="Confiança não se declara — se documenta. Documentos, 7 perguntas respondidas e DPO acessível.">
+<meta name="twitter:image" content="https://pilastra.com.br/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Quem é o encarregado de dados (DPO)?", "acceptedAnswer": {"@type": "Answer", "text": "DPO nomeado e acessível, com canal direto com a escola e com os responsáveis, como a LGPD exige."}},
+    {"@type": "Question", "name": "Qual a base legal para tratar dados de menores?", "acceptedAnswer": {"@type": "Answer", "text": "Consentimento parental registrado por aluno, com revogação a qualquer tempo — previsto no ECA Digital (Lei nº 15.211/2025) e na LGPD."}},
+    {"@type": "Question", "name": "As conversas dos alunos saem do país?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Processamento e registros em datacenters em território nacional — por decisão de arquitetura, não por obrigação legal."}},
+    {"@type": "Question", "name": "Vocês usam as conversas dos alunos para treinar modelos?", "acceptedAnswer": {"@type": "Answer", "text": "Não, nunca. As conversas pertencem à escola e às famílias: não viram dado de treino, não alimentam modelo de terceiro e não saem do perímetro contratado."}},
+    {"@type": "Question", "name": "Qual o prazo de retenção dos dados?", "acceptedAnswer": {"@type": "Answer", "text": "O que a escola definir. Política de retenção configurável, com descarte automático e comprovado."}},
+    {"@type": "Question", "name": "Como vocês notificam incidentes?", "acceptedAnswer": {"@type": "Answer", "text": "Com prazo e responsável definidos em contrato: comunicação à escola e suporte à notificação à ANPD quando aplicável."}},
+    {"@type": "Question", "name": "O produto está adequado ao ECA Digital?", "acceptedAnswer": {"@type": "Answer", "text": "Sim — adequação verificável: consentimento, melhor interesse do menor, supervisão responsável e registros de auditoria embutidos no produto."}}
+  ]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='10.5' y='6.8' width='13.5' height='3' rx='0.7' fill='%23123f3a'/%3E%3Crect x='12.3' y='9.8' width='10' height='1.9' fill='%23123f3a'/%3E%3Crect x='13.5' y='11.7' width='8' height='23.3' fill='%23123f3a'/%3E%3Cpath d='M21.5 8.4 C33.8 8.4 40.2 13.4 40.2 19.2 C40.2 25 33.8 29.4 21.5 29.4 L21.5 23.8 C28.2 23.8 33.6 22.2 33.6 19.2 C33.6 16.2 28.2 14.3 21.5 14.3 Z' fill='%23123f3a'/%3E%3Crect x='12.3' y='35' width='10' height='2.1' fill='%23123f3a'/%3E%3Crect x='10.3' y='37.1' width='14.5' height='3.1' rx='0.8' fill='%23b85c33'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ================= TOKENS ================= */
+:root{
+  --ink:#0c2421;
+  --petrol:#123f3a;
+  --petrol-deep:#0e332e;
+  --petrol-line:#1d544c;
+  --footer:#071d1a;
+  --concrete:#f4f1ea;
+  --panel:#fbfaf6;
+  --stone:#ece6d8;
+  --border:#ddd6c6;
+  --border-soft:#e6e1d3;
+  --text:#272c2a;
+  --body:#454b47;
+  --muted:#666c67;
+  --faint:#8f948e;
+  --on-dark:#f2eee4;
+  --on-dark-mut:#a3aea9;
+  --accent:#b85c33;
+  --accent-hi:#9c4b26;
+  --accent-soft:#e2a276;
+  --display:'Archivo',system-ui,sans-serif;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+  --ease:cubic-bezier(.22,.61,.21,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--concrete);color:var(--text);
+  font:400 16px/1.6 var(--sans);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:var(--accent-hi);text-decoration:none}
+a:hover{color:var(--accent)}
+img,svg{display:block}
+h1,h2,h3{text-wrap:balance;font-family:var(--display);color:var(--petrol);letter-spacing:-.018em}
+p{text-wrap:pretty}
+.container{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+section{scroll-margin-top:76px}
+em{font-family:var(--serif);font-style:italic;font-weight:500;letter-spacing:-.01em}
+
+/* ================= TEXTURA / MOTIVO ================= */
+.grain{position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.5;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .028 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
+.pilasters{background-image:repeating-linear-gradient(90deg,rgba(18,63,58,.05) 0 1px,transparent 1px 96px)}
+.pilasters-dark{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.032) 0 1px,transparent 1px 96px)}
+
+/* ================= REVEAL ================= */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  *{animation:none!important;transition:none!important}
+}
+
+/* ================= NAV ================= */
+.nav{position:fixed;top:0;left:0;right:0;z-index:60;transition:background .35s,box-shadow .35s,border-color .35s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(244,241,234,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--border-soft)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:72px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--petrol)}
+.brand span{font:800 23px/1 var(--display);letter-spacing:-.015em}
+.brand svg{width:30px;height:30px}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{position:relative;font:500 14.5px/1 var(--sans);color:#3c423e;padding:9px 13px;border-radius:6px;transition:color .2s,background .2s}
+.nav-links a:hover{color:var(--petrol);background:rgba(18,63,58,.055)}
+.nav-links a.active{color:var(--petrol)}
+.nav-links a.active::after{content:"";position:absolute;left:13px;right:13px;bottom:3px;height:2px;background:var(--accent);border-radius:2px}
+.btn{display:inline-flex;align-items:center;gap:9px;font:600 15px/1 var(--sans);border-radius:8px;padding:14px 24px;transition:transform .25s var(--ease),background .2s,border-color .2s,color .2s;cursor:pointer;border:0;white-space:nowrap}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 1px 2px rgba(12,36,33,.18),inset 0 1px 0 rgba(255,255,255,.14)}
+.btn-primary:hover{background:var(--accent-hi);color:#fff;transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--petrol);border:1px solid #c9c2b1}
+.btn-ghost:hover{border-color:var(--petrol);color:var(--petrol)}
+.btn-ghost-dark{background:transparent;color:var(--on-dark);border:1px solid #2c6157}
+.btn-ghost-dark:hover{border-color:var(--accent-soft);color:#fff}
+.btn-nav{padding:11px 19px;font-size:14px}
+.btn .arr{transition:transform .25s var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--border);background:var(--panel);border-radius:8px;align-items:center;justify-content:center;cursor:pointer;color:var(--petrol)}
+.mobile-menu{display:none;position:fixed;inset:72px 0 auto 0;z-index:59;background:rgba(244,241,234,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:12px clamp(20px,5vw,48px) 26px}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:flex;align-items:center;justify-content:space-between;padding:15px 4px;font:600 17px/1 var(--sans);color:var(--petrol);border-bottom:1px solid var(--border-soft)}
+.mobile-menu a:last-child{border-bottom:0}
+@media(max-width:920px){.nav-links{display:none}.burger{display:flex}}
+
+/* ================= EYEBROW / TIPO ================= */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:500 12.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--accent-hi)}
+.eyebrow::before{content:"";width:22px;height:1px;background:var(--accent)}
+.eyebrow-dark{color:var(--accent-soft)}
+.eyebrow-dark::before{background:var(--accent-soft)}
+.h2{margin-top:20px;font-size:clamp(30px,4.4vw,48px);font-weight:800;line-height:1.08}
+.lead{margin-top:22px;max-width:680px;font-size:clamp(16.5px,1.75vw,19.5px);line-height:1.65;color:var(--body)}
+.src{margin-top:16px;font:400 12.5px/1.55 var(--mono);color:var(--faint)}
+
+/* ================= SEÇÕES GENÉRICAS ================= */
+.sec{padding:clamp(84px,10vw,132px) 0;border-bottom:1px solid var(--border-soft)}
+.sec-alt{background:var(--panel)}
+
+/* ================= HERO DE PÁGINA ================= */
+.page-hero{position:relative;padding:clamp(150px,18vh,200px) 0 clamp(56px,7vw,84px);border-bottom:1px solid var(--border-soft);overflow:hidden}
+.page-hero-glow{position:absolute;top:-320px;right:-180px;width:760px;height:760px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(184,92,51,.10) 0%,rgba(184,92,51,.035) 42%,transparent 68%)}
+.page-hero h1{margin-top:26px;max-width:900px;font-size:clamp(36px,5vw,58px);font-weight:800;line-height:1.06;color:var(--ink)}
+.page-hero h1 em{color:var(--accent)}
+.page-hero .lead{max-width:720px}
+
+/* ================= 7 PERGUNTAS (dark) ================= */
+.dark{position:relative;background:linear-gradient(168deg,#0b2320 0%,var(--ink) 55%,#0a1f1c 100%);color:var(--on-dark);overflow:hidden}
+.dark::after{content:"";position:absolute;bottom:-340px;left:-200px;width:720px;height:720px;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(184,92,51,.13) 0%,transparent 62%)}
+.dark h2{color:var(--on-dark)}
+.dark .lead{color:var(--on-dark-mut)}
+.qa{margin-top:58px;display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:1}
+@media(max-width:880px){.qa{grid-template-columns:1fr}}
+.q{background:rgba(18,63,58,.55);border:1px solid var(--petrol-line);border-radius:13px;padding:24px 26px;transition:border-color .3s,background .3s;backdrop-filter:blur(4px)}
+.q:hover{border-color:#2e6a5f;background:rgba(20,70,63,.6)}
+.q .n{font:500 12px/1 var(--mono);letter-spacing:.12em;color:var(--accent-soft)}
+.q h3{margin-top:11px;font:600 17px/1.35 var(--sans);color:#ece8dc;letter-spacing:0}
+.q .why{margin-top:11px;font:400 12.5px/1.55 var(--mono);color:#7d968d}
+.q p{margin-top:11px;font:400 14px/1.55 var(--sans);color:var(--on-dark-mut)}
+.q p b{color:#e8e2d2;font-weight:600}
+.q.hero-q{background:linear-gradient(150deg,rgba(184,92,51,.16),rgba(184,92,51,.05));border-color:var(--accent);grid-row:span 2;display:flex;flex-direction:column}
+.q.hero-q h3{font-size:20px}
+.badge-no{margin-top:auto;padding-top:20px}
+.badge-no span{display:inline-flex;align-items:center;gap:9px;background:var(--accent);color:#fff;font:800 15px/1 var(--display);letter-spacing:.05em;padding:11px 19px;border-radius:100px;box-shadow:0 8px 24px -8px rgba(184,92,51,.55)}
+.reinforce{margin-top:36px;position:relative;z-index:1;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:24px 28px;background:rgba(226,162,118,.08);border:1px solid #2c6157;border-radius:13px}
+.reinforce svg{flex:0 0 auto;color:var(--accent-soft)}
+.reinforce p{font:600 clamp(16px,1.9vw,20px)/1.45 var(--sans);color:var(--on-dark)}
+.reinforce b{color:#fff}
+
+/* ================= BIBLIOTECA DE DOCUMENTOS ================= */
+.docs{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:880px){.docs{grid-template-columns:1fr}}
+.doc{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:clamp(26px,3vw,34px);display:flex;flex-direction:column;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.doc:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(12,36,33,.35);border-color:#cfc7b4}
+.doc .kind{display:inline-flex;align-self:flex-start;font:500 11px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--accent-hi);background:var(--stone);border:1px solid #e0d5bf;padding:8px 13px;border-radius:100px}
+.doc h3{margin-top:18px;font-size:clamp(19px,2vw,22px);font-weight:700;line-height:1.2}
+.doc p{margin-top:12px;font:400 14.5px/1.6 var(--sans);color:var(--body)}
+.doc .doc-cta{margin-top:auto;padding-top:22px}
+.doc .doc-note{font:500 12px/1.5 var(--mono);color:var(--faint)}
+
+/* ================= FORMULÁRIO ================= */
+.req{margin-top:56px;display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(36px,5vw,72px);align-items:start}
+@media(max-width:920px){.req{grid-template-columns:1fr}}
+.req-info h2{margin-top:20px;font-size:clamp(26px,3.2vw,38px);font-weight:800;line-height:1.1}
+.req-info p{margin-top:18px;font-size:clamp(15.5px,1.7vw,17.5px);line-height:1.7;color:var(--body)}
+.req-info .alt{margin-top:26px;display:flex;align-items:center;gap:11px;font:500 14.5px/1.5 var(--sans);color:var(--muted)}
+.req-info .alt svg{color:var(--accent-hi);flex:0 0 auto}
+.form-card{background:var(--panel);border:1px solid var(--border);border-radius:18px;padding:clamp(26px,3.4vw,40px);box-shadow:0 30px 70px -40px rgba(12,36,33,.3)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:560px){.form-row{grid-template-columns:1fr}}
+.field{margin-bottom:16px;display:flex;flex-direction:column;gap:7px}
+.field label{font:600 13px/1 var(--sans);color:var(--petrol)}
+.field label i{font-style:normal;color:var(--accent-hi)}
+.field input,.field textarea{font:400 15px/1.5 var(--sans);color:var(--text);background:#fff;border:1px solid var(--border);border-radius:9px;padding:12px 15px;transition:border-color .2s,box-shadow .2s;width:100%}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(184,92,51,.14)}
+.field input::placeholder,.field textarea::placeholder{color:var(--faint)}
+.form-hp{position:absolute;left:-9999px;top:-9999px;opacity:0;height:0;overflow:hidden}
+.form-fine{margin-top:16px;font:400 12px/1.6 var(--mono);color:var(--faint)}
+
+/* ================= PRINCÍPIOS ================= */
+.princ{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:980px){.princ{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.princ{grid-template-columns:1fr}}
+.pri{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:26px 24px;transition:border-color .3s,transform .3s var(--ease)}
+.pri:hover{border-color:var(--accent);transform:translateY(-3px)}
+.pri .ic{width:46px;height:46px;border-radius:11px;background:var(--petrol);display:flex;align-items:center;justify-content:center;color:var(--accent-soft)}
+.pri b{display:block;margin-top:17px;font:700 16.5px/1.25 var(--display);color:var(--petrol);letter-spacing:-.01em}
+.pri p{margin-top:8px;font:400 13.5px/1.55 var(--sans);color:var(--muted)}
+
+/* ================= CONTEXTO LEGAL ================= */
+.ctx{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:880px){.ctx{grid-template-columns:1fr}}
+.ctx-card{background:var(--stone);border:1px solid #e0d5bf;border-radius:13px;padding:24px 26px}
+.ctx-card .k{font:500 11px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--accent-hi)}
+.ctx-card p{margin-top:12px;font:400 14px/1.6 var(--sans);color:#3c423e}
+.ctx-card p b{color:var(--petrol)}
+.ctx-note{margin-top:34px;display:flex;gap:16px;align-items:flex-start;max-width:860px;padding:20px 24px;background:var(--stone);border:1px solid #e0d5bf;border-radius:12px}
+.ctx-note svg{flex:0 0 auto;margin-top:2px;color:var(--accent-hi)}
+.ctx-note p{font:500 15px/1.6 var(--sans);color:#3c423e}
+.ctx-note b{color:var(--petrol)}
+
+/* ================= DPO ================= */
+.dpo{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,80px);align-items:center}
+@media(max-width:920px){.dpo{grid-template-columns:1fr}}
+.dpo h2{margin-top:20px;font-size:clamp(28px,3.6vw,42px);font-weight:800;line-height:1.1}
+.dpo p{margin-top:20px;font-size:clamp(15.5px,1.7vw,17.5px);line-height:1.7;color:var(--body)}
+.dpo p b{color:var(--petrol)}
+.dpo-card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:clamp(28px,3.4vw,38px)}
+.dpo-card .role{font:500 11.5px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
+.dpo-card .name{margin-top:14px;font:800 clamp(24px,2.8vw,30px)/1.15 var(--display);color:var(--petrol);letter-spacing:-.015em}
+.dpo-card a.mail{margin-top:16px;display:inline-flex;align-items:center;gap:10px;font:600 15.5px/1 var(--sans);color:var(--accent-hi)}
+.dpo-card a.mail:hover{color:var(--accent)}
+.dpo-card .line{margin-top:22px;padding-top:20px;border-top:1px solid var(--border-soft);font:400 13.5px/1.6 var(--sans);color:var(--muted)}
+
+/* ================= RODAPÉ ================= */
+footer{background:var(--footer);color:#8ba098}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding:clamp(56px,7vw,80px) 0 40px}
+@media(max-width:880px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr}}
+.foot-brand p{margin-top:18px;max-width:300px;font:400 14px/1.65 var(--sans);color:#75908a}
+.foot-col h4{font:500 11.5px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:#577068;margin-bottom:18px}
+.foot-col a,.foot-col span{display:block;font:400 14.5px/1 var(--sans);color:#9db3ac;margin-bottom:13px;transition:color .2s}
+.foot-col a:hover{color:var(--accent-soft)}
+.foot-legal{border-top:1px solid #123129;padding:26px 0 34px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.foot-legal p{font:400 12.5px/1.7 var(--mono);color:#57706a}
+.foot-selo{display:inline-flex;align-items:center;gap:9px;font:500 12px/1.5 var(--mono);color:#8ba098}
+.foot-selo svg{color:var(--accent-soft);flex:0 0 auto}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container nav-in">
+    <a href="/" class="brand" aria-label="Pilastra — início">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10.5" y="6.8" width="13.5" height="3" rx="0.7" fill="currentColor"/><rect x="12.3" y="9.8" width="10" height="1.9" fill="currentColor"/><rect x="13.5" y="11.7" width="8" height="23.3" fill="currentColor"/><path d="M21.5 8.4 C33.8 8.4 40.2 13.4 40.2 19.2 C40.2 25 33.8 29.4 21.5 29.4 L21.5 23.8 C28.2 23.8 33.6 22.2 33.6 19.2 C33.6 16.2 28.2 14.3 21.5 14.3 Z" fill="currentColor"/><rect x="12.3" y="35" width="10" height="2.1" fill="currentColor"/><rect x="10.3" y="37.1" width="14.5" height="3.1" rx="0.8" fill="#b85c33"/></svg>
+      <span>Pilastra</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="/plataforma/">Plataforma</a>
+      <a href="/api/">API</a>
+      <a href="/confianca/" class="active">Central de Confiança</a>
+      <a href="/#contato" class="btn btn-primary btn-nav" style="margin-left:10px">Falar com a gente</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/plataforma/">Plataforma</a>
+  <a href="/api/">API</a>
+  <a href="/confianca/">Central de Confiança</a>
+  <a href="/#contato">Falar com a gente</a>
+</div>
+
+<main id="conteudo">
+<!-- ============ HERO ============ -->
+<section class="page-hero pilasters" id="topo">
+  <div class="page-hero-glow" aria-hidden="true"></div>
+  <div class="container">
+    <span class="eyebrow rv">Central de Confiança</span>
+    <h1 class="rv" style="--d:.08s">Confiança não se declara — <em>se documenta</em>. Aqui está o nosso dever de casa.</h1>
+    <p class="lead rv" style="--d:.16s">Esta página existe para quem aprova ou veta: diretor criterioso, DPO, jurídico. As perguntas que importam, respondidas por escrito; os documentos que sustentam cada resposta; e o nome de quem responde pelos dados.</p>
+  </div>
+</section>
+
+<!-- ============ AS 7 PERGUNTAS ============ -->
+<section class="sec dark pilasters-dark" id="perguntas">
+  <div class="container" style="position:relative;z-index:1">
+    <span class="eyebrow eyebrow-dark rv">A régua</span>
+    <h2 class="h2 rv" style="--d:.08s">As 7 perguntas que toda escola deveria fazer a <em style="color:#e2a276">qualquer fornecedor</em> de IA.</h2>
+    <p class="lead rv" style="--d:.16s">A Pilastra responde todas — por escrito e em contrato. Sem promessa de selo que ninguém tem: adequação e redução de risco, com evidência.</p>
+
+    <div class="qa">
+      <div class="q rv" style="--d:.05s">
+        <span class="n">01</span>
+        <h3>Quem é o encarregado de dados (DPO)?</h3>
+        <p class="why">Por que importa: a LGPD (art. 41) exige encarregado identificado como canal entre titulares, controlador e ANPD.</p>
+        <p><b>DPO nomeado e acessível.</b> Canal direto com a escola e com os responsáveis, como a LGPD exige.</p>
+      </div>
+      <div class="q rv" style="--d:.1s">
+        <span class="n">02</span>
+        <h3>Qual a base legal para tratar dados de menores?</h3>
+        <p class="why">Por que importa: dados de crianças e adolescentes têm regime reforçado — LGPD (art. 14) e ECA Digital (Lei nº 15.211/2025).</p>
+        <p><b>Consentimento parental registrado</b> por aluno, com revogação a qualquer tempo — previsto no ECA Digital e na LGPD.</p>
+      </div>
+      <div class="q rv" style="--d:.15s">
+        <span class="n">03</span>
+        <h3>As conversas dos alunos saem do país?</h3>
+        <p class="why">Por que importa: transferência internacional de dados tem regras próprias na LGPD (arts. 33 a 36) — e cada fronteira cruzada é um risco a mais para gerenciar.</p>
+        <p><b>Não.</b> Processamento e registros em datacenters em território nacional — por decisão de arquitetura, não por obrigação legal.</p>
+      </div>
+      <div class="q hero-q rv" style="--d:.2s">
+        <span class="n">04</span>
+        <h3>Vocês usam as conversas dos alunos para treinar modelos?</h3>
+        <p class="why">Por que importa: o tratamento de dados de menores deve observar o melhor interesse da criança e do adolescente (LGPD, art. 14) — e treino de modelo não é finalidade pedagógica.</p>
+        <p>As conversas pertencem à escola e às famílias. Não viram dado de treino, não alimentam modelo de terceiro, não saem do perímetro contratado.</p>
+        <div class="badge-no"><span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          NÃO. Nunca.</span>
+        </div>
+      </div>
+      <div class="q rv" style="--d:.25s">
+        <span class="n">05</span>
+        <h3>Qual o prazo de retenção dos dados?</h3>
+        <p class="why">Por que importa: a LGPD (arts. 15 e 16) condiciona a conservação ao necessário para a finalidade — e exige eliminação ao término.</p>
+        <p><b>O que a escola definir.</b> Política de retenção configurável, com descarte automático e comprovado.</p>
+      </div>
+      <div class="q rv" style="--d:.3s">
+        <span class="n">06</span>
+        <h3>Como vocês notificam incidentes?</h3>
+        <p class="why">Por que importa: incidente de segurança que possa gerar risco aos titulares deve ser comunicado à ANPD e aos afetados (LGPD, art. 48).</p>
+        <p><b>Com prazo e responsável definidos em contrato.</b> Comunicação à escola e suporte à notificação à ANPD quando aplicável.</p>
+      </div>
+      <div class="q rv" style="--d:.35s">
+        <span class="n">07</span>
+        <h3>O produto está adequado ao ECA Digital?</h3>
+        <p class="why">Por que importa: a Lei nº 15.211/2025 passou a exigir de provedores consentimento, privacidade por padrão e deveres de proteção a crianças e adolescentes.</p>
+        <p><b>Sim — adequação verificável.</b> Consentimento, melhor interesse do menor, supervisão responsável e registros de auditoria embutidos no produto.</p>
+      </div>
+    </div>
+
+    <div class="reinforce rv" style="--d:.4s">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><polyline points="9 12 11 14 15 10"/></svg>
+      <p>Processamento e registros <b>100% em datacenters no Brasil.</b> É o nosso diferencial de arquitetura — e a sua tranquilidade na reunião com os pais.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BIBLIOTECA DE DOCUMENTOS ============ -->
+<section class="sec" id="documentos">
+  <div class="container">
+    <span class="eyebrow rv">Biblioteca de documentos</span>
+    <h2 class="h2 rv" style="--d:.08s">O que sustenta cada resposta, <em>por escrito</em>.</h2>
+    <p class="lead rv" style="--d:.16s">A política é pública na íntegra. Os demais documentos são compartilhados completos mediante solicitação — pelo formulário abaixo, que chega direto ao nosso time.</p>
+
+    <div class="docs">
+      <div class="doc rv" style="--d:.08s">
+        <span class="kind">Documento público</span>
+        <h3>Política de Privacidade</h3>
+        <p>Como tratamos dados no site e na plataforma, com o regime reforçado de menores (LGPD art. 14) e o ECA Digital.</p>
+        <div class="doc-cta">
+          <a href="/politica-de-privacidade/" class="btn btn-ghost">Ler na íntegra
+            <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="doc rv" style="--d:.14s">
+        <span class="kind">Modelo</span>
+        <h3>Termo de Consentimento do Responsável</h3>
+        <p>O que o responsável autoriza, com quais finalidades, e como revoga. Consentimento específico e em destaque, como o art. 14 exige.</p>
+        <div class="doc-cta"><span class="doc-note">Modelo completo mediante solicitação</span></div>
+      </div>
+      <div class="doc rv" style="--d:.2s">
+        <span class="kind">Contrato</span>
+        <h3>DPA — Contrato de Tratamento de Dados</h3>
+        <p>Papéis de controlador, operador e suboperador definidos por escrito; eliminação comprovada em até 30 dias após o término; notificação de incidentes em até 48h úteis.</p>
+        <div class="doc-cta"><span class="doc-note">Mediante solicitação</span></div>
+      </div>
+      <div class="doc rv" style="--d:.26s">
+        <span class="kind">Relatório</span>
+        <h3>RIPD — Relatório de Impacto</h3>
+        <p>Riscos mapeados e mitigações por desenho: pseudonimização, residência nacional, retenção mínima, supervisão humana.</p>
+        <div class="doc-cta"><span class="doc-note">Mediante solicitação</span></div>
+      </div>
+      <div class="doc rv" style="--d:.32s">
+        <span class="kind">Protocolo</span>
+        <h3>Protocolo de Resposta a Incidentes</h3>
+        <p>Detecção, contenção, comunicação em até 48h úteis e registro — definido antes de precisar, não depois.</p>
+        <div class="doc-cta"><span class="doc-note">Mediante solicitação</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMULÁRIO — PACOTE DE CONFORMIDADE ============ -->
+<section class="sec sec-alt" id="solicitar">
+  <div class="container req">
+    <div class="req-info">
+      <span class="eyebrow rv">Pacote completo</span>
+      <h2 class="rv" style="--d:.08s">Solicite o pacote completo de conformidade.</h2>
+      <p class="rv" style="--d:.16s">Termo de consentimento, DPA, RIPD e protocolo de incidentes, na íntegra, para análise do seu jurídico ou do seu DPO. Pedimos apenas o essencial para responder — nada além.</p>
+      <div class="alt rv" style="--d:.22s">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <span>Prefere e-mail? <a href="mailto:contato@pilastra.com.br">contato@pilastra.com.br</a></span>
+      </div>
+    </div>
+    <form class="form-card rv" style="--d:.14s" action="https://formsubmit.co/contato@pilastra.com.br" method="POST" id="pacoteForm">
+      <input type="hidden" name="_subject" id="formSubject" value="Solicitação de pacote de conformidade">
+      <input type="hidden" name="_next" value="https://pilastra.com.br/confianca/obrigado/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div class="form-hp" aria-hidden="true"><label>Não preencha este campo<input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-row">
+        <div class="field">
+          <label for="f-nome">Nome <i>*</i></label>
+          <input type="text" id="f-nome" name="nome" required autocomplete="name" placeholder="Seu nome completo">
+        </div>
+        <div class="field">
+          <label for="f-cargo">Cargo <i>*</i></label>
+          <input type="text" id="f-cargo" name="cargo" required autocomplete="organization-title" placeholder="Ex.: Diretor, DPO, Coordenador">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-inst">Instituição <i>*</i></label>
+        <input type="text" id="f-inst" name="instituicao" required autocomplete="organization" placeholder="Escola ou empresa">
+      </div>
+      <div class="field">
+        <label for="f-email">E-mail <i>*</i></label>
+        <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="voce@instituicao.com.br">
+      </div>
+      <div class="field">
+        <label for="f-msg">Mensagem <span style="font-weight:400;color:var(--faint)">(opcional)</span></label>
+        <textarea id="f-msg" name="mensagem" placeholder="Contexto da sua instituição ou dúvidas específicas"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Solicitar o pacote
+        <svg class="arr" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </button>
+      <p class="form-fine">Seus dados são usados apenas para responder a esta solicitação. Sem newsletter, sem repasse a terceiros.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ PRINCÍPIOS DE ENGENHARIA ============ -->
+<section class="sec" id="principios">
+  <div class="container">
+    <span class="eyebrow rv">Princípios de engenharia</span>
+    <h2 class="h2 rv" style="--d:.08s">Proteção por desenho, <em>não por promessa</em>.</h2>
+
+    <div class="princ">
+      <div class="pri rv" style="--d:.08s">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+        <b>Dados de alunos não treinam modelos</b>
+        <p>Não viram dado de treino, não alimentam modelo de terceiro, não saem do perímetro contratado. Está em contrato.</p>
+      </div>
+      <div class="pri rv" style="--d:.14s">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 6 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-6-3.8-9S9.5 5.5 12 3z"/></svg></div>
+        <b>Processamento e registros no Brasil</b>
+        <p>Inferência e logs em datacenters em território nacional, região Sudeste. O dado sensível não atravessa fronteira.</p>
+      </div>
+      <div class="pri rv" style="--d:.2s">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <b>Pseudonimização por desenho</b>
+        <p>Identificadores opacos separam a identidade do aluno do conteúdo processado — a associação exige informação mantida fora do nosso perímetro.</p>
+      </div>
+      <div class="pri rv" style="--d:.26s">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15.5 14"/></svg></div>
+        <b>Retenção mínima, descarte automático</b>
+        <p>A escola define o prazo; o descarte é automático e comprovado. Nada fica retido "por precaução".</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTEXTO LEGAL ============ -->
+<section class="sec sec-alt" id="contexto">
+  <div class="container">
+    <span class="eyebrow rv">O contexto legal</span>
+    <h2 class="h2 rv" style="--d:.08s">O cenário mudou. <em>A régua subiu.</em></h2>
+
+    <div class="ctx">
+      <div class="ctx-card rv" style="--d:.1s">
+        <span class="k">ECA Digital</span>
+        <p>A <b>Lei nº 15.211/2025</b>, em vigor desde março de 2026, passou a exigir de provedores consentimento, privacidade por padrão e proteção reforçada de crianças e adolescentes em ambientes digitais.</p>
+      </div>
+      <div class="ctx-card rv" style="--d:.16s">
+        <span class="k">LGPD · art. 14</span>
+        <p>Dados de crianças e adolescentes têm <b>regime reforçado</b>: tratamento no melhor interesse do menor, com consentimento específico e em destaque dado por ao menos um responsável.</p>
+      </div>
+      <div class="ctx-card rv" style="--d:.22s">
+        <span class="k">Em discussão</span>
+        <p>O <b>parecer do CNE</b> sobre o uso de inteligência artificial na educação básica está a caminho — e deve consolidar orientações para as escolas.</p>
+      </div>
+    </div>
+
+    <div class="ctx-note rv" style="--d:.3s">
+      <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><polyline points="9 12 11 14 15 10"/></svg>
+      <p><b>Registro importante:</b> manter os dados no Brasil não é exigência legal — é a nossa <b>decisão de arquitetura</b>, tomada como redutor de risco para a sua instituição. Diferencial nosso, tranquilidade sua.</p>
+    </div>
+    <p class="src rv" style="--d:.36s">Fontes: Lei nº 15.211/2025 (ECA Digital) · Lei nº 13.709/2018 (LGPD), art. 14</p>
+  </div>
+</section>
+
+<!-- ============ DPO ============ -->
+<section class="sec" id="dpo">
+  <div class="container dpo">
+    <div>
+      <span class="eyebrow rv">Encarregado de dados (DPO)</span>
+      <h2 class="rv" style="--d:.08s">Um nome e um e-mail. <em>Sem fricção.</em></h2>
+      <p class="rv" style="--d:.16s">A LGPD exige um encarregado identificado como canal entre titulares, controlador e ANPD. O nosso tem nome, rosto e caixa de entrada própria — para escolas, responsáveis e autoridade.</p>
+    </div>
+    <div class="dpo-card rv" style="--d:.14s">
+      <span class="role">Encarregado pelo Tratamento de Dados Pessoais</span>
+      <div class="name">Willian Bastida</div>
+      <a class="mail" href="mailto:dpo@pilastra.com.br">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        dpo@pilastra.com.br
+      </a>
+      <p class="line">Canal direto para titulares, responsáveis, instituições contratantes e ANPD, nos termos do art. 41 da LGPD.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="/" class="brand" style="color:#f2eee4">
+          <svg width="25" height="25" viewBox="0 0 48 48" aria-hidden="true"><rect x="10.5" y="6.8" width="13.5" height="3" rx="0.7" fill="currentColor"/><rect x="12.3" y="9.8" width="10" height="1.9" fill="currentColor"/><rect x="13.5" y="11.7" width="8" height="23.3" fill="currentColor"/><path d="M21.5 8.4 C33.8 8.4 40.2 13.4 40.2 19.2 C40.2 25 33.8 29.4 21.5 29.4 L21.5 23.8 C28.2 23.8 33.6 22.2 33.6 19.2 C33.6 16.2 28.2 14.3 21.5 14.3 Z" fill="currentColor"/><rect x="12.3" y="35" width="10" height="2.1" fill="currentColor"/><rect x="10.3" y="37.1" width="14.5" height="3.1" rx="0.8" fill="#b85c33"/></svg>
+          <span>Pilastra</span>
+        </a>
+        <p>A infraestrutura de IA privada e conforme para setores regulados no Brasil.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Navegação</h4>
+        <a href="/plataforma/">Plataforma</a>
+        <a href="/api/">API</a>
+        <a href="/confianca/">Central de Confiança</a>
+        <a href="/politica-de-privacidade/">Política de Privacidade</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contato</h4>
+        <a href="mailto:contato@pilastra.com.br">contato@pilastra.com.br</a>
+        <a href="mailto:dpo@pilastra.com.br">dpo@pilastra.com.br</a>
+        <a href="https://wa.me/5511987050864">WhatsApp comercial</a>
+        <span>Avenida Giovanni Gronchi, 6195 – Sala 310<br>Vila Andrade, São Paulo · SP · 05724-003</span>
+      </div>
+      <div class="foot-col">
+        <h4>Legal</h4>
+        <span>Vrummm Tecnologia LTDA</span>
+        <span>CNPJ 37.442.535/0001-22</span>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <p>© 2026 Pilastra · Vrummm Tecnologia LTDA · CNPJ 37.442.535/0001-22<br>Avenida Giovanni Gronchi, 6195 – Sala 310, Vila Andrade, São Paulo · SP · 05724-003</p>
+      <span class="foot-selo">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><polyline points="9 12 11 14 15 10"/></svg>
+        Processamento e registros em datacenters no Brasil
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* Nav: fundo ao rolar */
+  var nav = document.getElementById('nav');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* Menu mobile */
+  var burger = document.getElementById('burger'),
+      menu = document.getElementById('mobileMenu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+
+  /* Reveal escalonado */
+  var rvs = document.querySelectorAll('.rv');
+  if (reduced || !('IntersectionObserver' in window)) {
+    rvs.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+    rvs.forEach(function(el){ io.observe(el); });
+  }
+
+  /* Assunto do e-mail com a instituição */
+  var form = document.getElementById('pacoteForm');
+  form.addEventListener('submit', function(){
+    var inst = document.getElementById('f-inst').value.trim();
+    document.getElementById('formSubject').value = '[Conformidade] Solicitação de pacote — ' + (inst || 'site');
+  });
+})();
+</script>
+</body>
+</html>

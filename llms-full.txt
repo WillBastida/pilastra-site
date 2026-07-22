@@ -2,11 +2,13 @@
 
 URL: https://pilastra.com.br/
 Idioma: Português (Brasil)
-Tipo: Landing page institucional (pré-lançamento), página única.
+Tipo: Site institucional multi-página (estático).
+
+Páginas: / (home) · /plataforma/ (produto para escolas) · /api/ (produto para edtechs) · /confianca/ (Central de Confiança) · /politica-de-privacidade/ (documento legal).
 
 ---
 
-## Hero
+## Home (/)
 
 **IA de ponta para a educação, com os dados no Brasil e a conformidade por padrão.**
 
@@ -14,13 +16,13 @@ A Pilastra é a camada de infraestrutura entre os modelos de IA e a sua institui
 
 Selos: Adequação ECA Digital · LGPD por desenho · Datacenters no Brasil · API compatível com OpenAI · Preço fixo em reais.
 
----
+Três caminhos: Para Escolas → /plataforma/ · Para Edtechs → /api/ · Central de Confiança → /confianca/.
 
-## O problema
+### O problema
 
 **Seus alunos já usam IA. A pergunta é sob quais regras.**
 
-A adoção já aconteceu — sem orientação, sem registro, sem cobertura legal. O ECA Digital (Lei nº 15.211/2025, em vigor desde março de 2026) e a LGPD exigem consentimento, auditoria e proteção reforçada de dados de menores. Ferramentas genéricas como ChatGPT e Gemini não resolvem isso: elas expõem a instituição.
+A adoção já aconteceu — sem orientação, sem registro, sem cobertura legal. O ECA Digital (Lei nº 15.211/2025, em vigor desde março de 2026) e a LGPD exigem consentimento, auditoria e proteção reforçada de dados de menores. Ferramentas genéricas não resolvem isso: elas expõem a instituição.
 
 Estatísticas:
 - 7 em cada 10 alunos do Ensino Médio já usam IA generativa para pesquisas escolares (TIC Educação 2024 — Cetic.br/NIC.br, divulgada em set/2025).
@@ -29,35 +31,50 @@ Estatísticas:
 
 Nota de posicionamento: a escola não controla o que o aluno faz no celular dele, em casa — mas controla a IA que ela mesma coloca na mão dele. É por essa, a oficial (aula e plataforma), que a instituição responde. Hoje, para a maioria das escolas, essa resposta é: nenhum registro, nenhum consentimento, nenhuma regra.
 
----
+### Quem somos
 
-## A solução — três camadas
+Fundador com 10 anos no setor financeiro e bancário (mercado regulado) ao lado de um construtor AI-native. Operação por Vrummm Tecnologia LTDA, empresa constituída em 2020. Sede em São Paulo — Avenida Giovanni Gronchi, 6195, Sala 310, Vila Andrade, CEP 05724-003.
 
-1. **Para o aluno — o chat seguro:** filtros de conteúdo por faixa etária; login pela conta escolar; responde com base no material da própria escola; horário de uso definido pela coordenação.
-2. **Para o professor — o painel de supervisão:** alertas de segurança em primeiro lugar (supervisão, não vigilância); visão por turma dos temas em que os alunos travaram; acesso a conversa individual só com justificativa registrada.
-3. **Para a coordenação — o console de conformidade:** registro de consentimento parental por aluno; política de retenção de dados configurável; relatório mensal pronto para o DPO; trilha de auditoria completa e exportável.
+**Fora da educação:** empresas que precisam de infraestrutura de IA para dados sensíveis (saúde, jurídico, financeiro) podem falar com a Pilastra para desenhar a solução.
 
 ---
 
-## Conformidade — as 7 perguntas e as respostas da Pilastra
+## Plataforma para escolas (/plataforma/)
 
-1. **Quem é o encarregado de dados (DPO)?** DPO nomeado e acessível, canal direto com a escola e com os responsáveis, como a LGPD exige.
-2. **Qual a base legal para tratar dados de menores?** Consentimento parental registrado por aluno, com revogação a qualquer tempo — previsto no ECA Digital e na LGPD.
-3. **As conversas dos alunos saem do país?** Não. Processamento e registros em datacenters em território nacional — por decisão de arquitetura, não por obrigação legal.
-4. **Vocês usam as conversas dos alunos para treinar modelos?** NÃO. Nunca. As conversas pertencem à escola e às famílias; não viram dado de treino, não alimentam modelo de terceiro, não saem do perímetro contratado.
-5. **Qual o prazo de retenção dos dados?** O que a escola definir. Política de retenção configurável, com descarte automático e comprovado.
-6. **Como vocês notificam incidentes?** Com prazo e responsável definidos em contrato; comunicação à escola e suporte à notificação à ANPD quando aplicável.
-7. **O produto está adequado ao ECA Digital?** Sim — adequação verificável: consentimento, melhor interesse do menor, supervisão responsável e registros de auditoria embutidos no produto.
+**A IA que seus alunos já usam — agora com as travas, a supervisão e a marca da sua escola.**
 
-Reforço: processamento e registros 100% em datacenters no Brasil (diferencial de arquitetura; a lei não exige dado no Brasil).
+Três camadas, uma por função:
+
+1. **Aluno — o chat seguro:** SSO com a conta escolar (Google/Microsoft, sem senha nova); filtros de conteúdo por faixa etária; responde com base no material da própria escola; horário de uso definido pela coordenação; não faz a lição pelo aluno (conduz por perguntas — comportamento socrático).
+2. **Professor — o painel de supervisão:** alertas de segurança em primeiro lugar (supervisão, não vigilância); visão por turma dos temas em que os alunos travaram; acesso a conversa individual somente com justificativa registrada — exigência do ECA Digital transformada em proteção demonstrável aos pais.
+3. **Coordenação — o console de conformidade:** consentimento parental registrado e revogável; política de retenção configurável; relatório mensal para DPO e pais; trilha de auditoria completa e exportável.
+
+**Whitelabel:** a plataforma sai com a marca da escola — domínio, logo e cores. Para os pais, é a escola oferecendo IA, não um fornecedor terceiro.
+
+**Implantação — piloto de 60 dias:** escopo fechado; treinamento dos professores (1 sessão de 1 hora + suporte contínuo); critérios de sucesso definidos juntos no início; relatório final. Preço é conversa — nunca publicado.
+
+### FAQ da escola (respostas oficiais)
+
+- **Como funciona o consentimento dos pais?** Digital, registrado por aluno, revogável a qualquer tempo. Sem consentimento ativo, o aluno não acessa.
+- **E se o aluno perguntar algo impróprio?** Filtros por faixa etária bloqueiam na entrada e na saída; situações sensíveis geram alerta para revisão humana do professor.
+- **A IA faz a lição pelo aluno?** Não. Ela conduz por perguntas, com base no material da escola — comportamento de tutor, não de atalho.
+- **Os professores precisam de treinamento?** Uma sessão de 1 hora na implantação, mais suporte contínuo durante o piloto.
+- **Funciona no celular e em computador antigo?** Sim: roda no navegador, sem instalar nada, pela conta escolar que o aluno já tem.
+- **As conversas são usadas para treinar IA?** Não. Nunca. Está em contrato: as conversas pertencem à escola e às famílias.
+- **Quem pode ver as conversas dos alunos?** Indicadores por turma são visíveis ao professor; conversa individual, só com justificativa registrada e auditável.
+- **E o ECA Digital?** Consentimento, verificação por conta institucional, privacidade por padrão e trilha de auditoria — o checklist da lei embutido no produto.
 
 ---
 
-## Como funciona (arquitetura)
+## API para edtechs (/api/)
 
-Fluxo: (1) modelos abertos de ponta ajustados ao contexto educacional → (2) servidores no Brasil, região Sudeste → (3) endpoint com API compatível com OpenAI (migração = trocar a base_url) → (4) camada de conformidade embutida (consentimento, retenção, auditoria).
+**O motor de IA privado e conforme para o seu produto educacional. Um endpoint, preço fixo em reais, ECA Digital resolvido em contrato.**
 
-Exemplo de migração:
+Para quem é: edtechs com IA no produto · sistemas de ensino que precisam de camada de IA própria · plataformas escolares que serão cobradas por conformidade.
+
+Fluxo da arquitetura: seu produto → endpoint Pilastra (compatível com a API da OpenAI — migração = trocar a base_url) → verificação de consentimento → guardrails de entrada e saída → inferência em datacenter no Brasil (região Sudeste) → trilha de auditoria → resposta. O "cartório" (consentimento, auditoria, eliminação) é camada embutida, não add-on.
+
+Exemplo ilustrativo de migração:
 
 ```python
 client = OpenAI(
@@ -66,29 +83,56 @@ client = OpenAI(
 )
 ```
 
+**Pseudonimização:** a edtech envia um ID opaco — a Pilastra nunca recebe a identidade do aluno; a associação fica do lado do cliente (pseudonimização no sentido do art. 5º da LGPD).
+
+**Bundle contratual:** DPA com cadeia de suboperador correta (escola → edtech → Pilastra) · SLA 24×7 para o canal API · preço fixo mensal em reais por faixa de capacidade (sem valores públicos).
+
 Diferenciais técnicos: preço fixo em reais, previsível (sem fatura em dólar nem surpresa por token); latência nacional; sem lock-in de modelo.
 
 ---
 
-## Ofertas
+## Central de Confiança (/confianca/)
 
-**Para escolas:** IA segura na sala de aula, com a marca da escola. Plataforma pronta com as três telas (aluno, professor, coordenação), nada para instalar.
+**Confiança não se declara — se documenta.**
 
-**Para edtechs:** a camada de IA privada e conforme para embarcar no produto que a edtech já vende — um endpoint, preço fixo em real, compliance resolvido, whitelabel.
+### As 7 perguntas e as respostas da Pilastra
 
-**Fora da educação:** empresas que precisam de infraestrutura de IA para dados sensíveis (saúde, jurídico, financeiro) podem falar com a Pilastra para desenhar a solução.
+1. **Quem é o encarregado de dados (DPO)?** DPO nomeado e acessível, canal direto com a escola e com os responsáveis, como a LGPD exige (art. 41).
+2. **Qual a base legal para tratar dados de menores?** Consentimento parental registrado por aluno, com revogação a qualquer tempo — previsto no ECA Digital e na LGPD (art. 14).
+3. **As conversas dos alunos saem do país?** Não. Processamento e registros em datacenters em território nacional — por decisão de arquitetura, não por obrigação legal.
+4. **Vocês usam as conversas dos alunos para treinar modelos?** NÃO. Nunca. As conversas pertencem à escola e às famílias; não viram dado de treino, não alimentam modelo de terceiro, não saem do perímetro contratado.
+5. **Qual o prazo de retenção dos dados?** O que a escola definir. Política de retenção configurável, com descarte automático e comprovado.
+6. **Como vocês notificam incidentes?** Com prazo e responsável definidos em contrato; comunicação à escola em até 48h úteis e suporte à notificação à ANPD quando aplicável.
+7. **O produto está adequado ao ECA Digital?** Sim — adequação verificável: consentimento, melhor interesse do menor, supervisão responsável e registros de auditoria embutidos no produto.
 
----
+### Biblioteca de documentos
 
-## Quem somos
+- **Política de Privacidade** — pública na íntegra: como tratamos dados no site e na plataforma, com o regime reforçado de menores (LGPD art. 14) e o ECA Digital.
+- **Termo de Consentimento do Responsável** — o que o responsável autoriza, com quais finalidades, e como revoga. Consentimento específico e em destaque, como o art. 14 exige. Modelo completo mediante solicitação.
+- **DPA — Contrato de Tratamento de Dados** — papéis de controlador, operador e suboperador definidos por escrito; eliminação comprovada em até 30 dias após o término; notificação de incidentes em até 48h úteis. Mediante solicitação.
+- **RIPD — Relatório de Impacto** — riscos mapeados e mitigações por desenho: pseudonimização, residência nacional, retenção mínima, supervisão humana. Mediante solicitação.
+- **Protocolo de Resposta a Incidentes** — detecção, contenção, comunicação em até 48h úteis e registro — definido antes de precisar, não depois. Mediante solicitação.
 
-Fundador com 10 anos no setor financeiro e bancário (mercado regulado) ao lado de um construtor AI-native. Operação por Vrummm Tecnologia LTDA, empresa constituída em 2020. Sede em São Paulo — Avenida Giovanni Gronchi, 6195, Sala 310, Vila Andrade, CEP 05724-003.
+Solicitação do pacote completo: formulário na própria página (nome, instituição, cargo, e-mail — nada além) ou contato@pilastra.com.br.
+
+### Princípios de engenharia
+
+Dados de alunos não treinam modelos · processamento e registros no Brasil · pseudonimização por desenho · retenção mínima com descarte automático.
+
+### Contexto legal
+
+ECA Digital (Lei nº 15.211/2025) em vigor desde março de 2026 · LGPD art. 14 (regime reforçado para menores) · parecer do CNE sobre IA na educação básica a caminho. Registro importante: manter os dados no Brasil não é exigência legal — é decisão de arquitetura da Pilastra, tomada como redutor de risco.
+
+### Encarregado (DPO)
+
+Willian Bastida — dpo@pilastra.com.br. Canal direto para titulares, responsáveis, instituições contratantes e ANPD (art. 41 da LGPD).
 
 ---
 
 ## Contato
 
 - E-mail: contato@pilastra.com.br
+- DPO: dpo@pilastra.com.br
 - WhatsApp: +55 11 98705-0864
 - CNPJ: 37.442.535/0001-22 (Vrummm Tecnologia LTDA)
 
@@ -96,14 +140,15 @@ Fundador com 10 anos no setor financeiro e bancário (mercado regulado) ao lado 
 
 ## Política de Privacidade
 
-A Política de Privacidade e Proteção de Dados (versão 1.1, atualizada em 21 de julho de 2026) está publicada em https://pilastra.com.br/politica-de-privacidade/ — página em HTML estático, legível por crawlers e agentes de IA. Pontos centrais:
+A Política de Privacidade e Proteção de Dados (versão 1.2, atualizada em 22 de julho de 2026) está publicada em https://pilastra.com.br/politica-de-privacidade/ — página em HTML estático, legível por crawlers e agentes de IA. Pontos centrais:
 
 - Na plataforma de IA, a Pilastra é Operadora; a escola/edtech é a Controladora. No site institucional, a Pilastra é Controladora dos dados de contato.
 - Dados de alunos e das instituições NÃO são usados para treinar modelos — nem da Pilastra, nem de terceiros.
 - Processamento e registros em datacenters no Brasil (Magalu Cloud, região Sudeste); subprocessadores: Magalu Cloud e Cloudflare.
+- Os formulários do site (home, /plataforma/, /api/ e /confianca/) usam o serviço FormSubmit exclusivamente como transporte da mensagem para o nosso e-mail, sem cookies ou rastreamento no site.
 - Retenção padrão do conteúdo das interações: 90 dias no produto de sala de aula (configurável); não retido por padrão na integração via API.
 - A plataforma não toma decisões automatizadas com efeitos sobre o aluno.
 - O site não usa cookies de rastreamento, analytics de terceiros ou pixels de publicidade na versão atual.
 - Encarregado (DPO): Willian Bastida — dpo@pilastra.com.br.
 
-Nota de rigor factual: a Pilastra não afirma que a lei exige dados no Brasil (é diferencial, não obrigação); não promete chancela de MEC/CNE; apresenta conformidade como adequação e redução de risco, não como selo ou certificação.
+Nota de rigor factual: a Pilastra não afirma que a lei exige dados no Brasil (é diferencial, não obrigação); não promete chancela de MEC/CNE/ANPD; apresenta conformidade como adequação e redução de risco, não como selo ou certificação.

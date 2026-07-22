@@ -55,6 +55,7 @@ body{
   overflow-x:hidden;
 }
 ::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 a{color:var(--accent-hi);text-decoration:none}
 a:hover{color:var(--accent)}
 img,svg{display:block}
@@ -149,6 +150,8 @@ footer{background:var(--footer);color:#8ba098}
 .foot-col a:hover{color:var(--accent-soft)}
 .foot-legal{border-top:1px solid #123129;padding:26px 0 34px;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
 .foot-legal p{font:400 12.5px/1.7 var(--mono);color:#57706a}
+.foot-selo{display:inline-flex;align-items:center;gap:9px;font:500 12px/1.5 var(--mono);color:#8ba098}
+.foot-selo svg{color:var(--accent-soft);flex:0 0 auto}
 </style>
 </head>
 <body>
@@ -162,11 +165,9 @@ footer{background:var(--footer);color:#8ba098}
       <span>Pilastra</span>
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
-      <a href="/#problema">O problema</a>
-      <a href="/#solucao">Solução</a>
-      <a href="/#conformidade">Conformidade</a>
-      <a href="/#arquitetura">Arquitetura</a>
-      <a href="/#publicos">Para quem</a>
+      <a href="/plataforma/">Plataforma</a>
+      <a href="/api/">API</a>
+      <a href="/confianca/">Central de Confiança</a>
       <a href="/#contato" class="btn btn-primary btn-nav" style="margin-left:10px">Falar com a gente</a>
     </nav>
     <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
@@ -175,11 +176,9 @@ footer{background:var(--footer);color:#8ba098}
   </div>
 </header>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="/#problema">O problema</a>
-  <a href="/#solucao">Solução</a>
-  <a href="/#conformidade">Conformidade</a>
-  <a href="/#arquitetura">Arquitetura</a>
-  <a href="/#publicos">Para quem</a>
+  <a href="/plataforma/">Plataforma</a>
+  <a href="/api/">API</a>
+  <a href="/confianca/">Central de Confiança</a>
   <a href="/#contato">Falar com a gente</a>
 </div>
 
@@ -190,7 +189,7 @@ footer{background:var(--footer);color:#8ba098}
   <div class="container">
     <span class="eyebrow rv">Documento legal</span>
     <h1 class="rv" style="--d:.08s">Política de Privacidade e Proteção de Dados</h1>
-    <p class="legal-meta rv" style="--d:.16s">Última atualização: <b>21 de julho de 2026</b> · Versão 1.1</p>
+    <p class="legal-meta rv" style="--d:.16s">Última atualização: <b>22 de julho de 2026</b> · Versão 1.2</p>
   </div>
 </section>
 
@@ -256,6 +255,7 @@ footer{background:var(--footer);color:#8ba098}
         <li><b>Dados que você nos fornece:</b> nome, e-mail, telefone e o conteúdo da mensagem que você nos envia (por formulário, e-mail ou WhatsApp), com a finalidade única de responder e conduzir a conversa comercial. Base legal: legítimo interesse e/ou procedimentos preliminares a um contrato (art. 7º, incisos V e IX, da LGPD).</li>
         <li><b>Contato via WhatsApp:</b> caso você opte por falar conosco pelo WhatsApp (Meta Platforms, Inc.), o conteúdo da conversa e os dados de contato trafegam pela infraestrutura desse provedor, fora do território nacional, sujeitos às políticas do próprio WhatsApp.</li>
         <li><b>Dados técnicos de navegação:</b> nosso site é servido pela Cloudflare, que, como parte da entrega de conteúdo e da segurança, processa temporariamente dados como endereço IP. Não utilizamos esses dados para perfilamento.</li>
+        <li><b>Formulários do site:</b> os dados enviados pelos formulários do site (nome, e-mail, instituição e informações de contexto por você fornecidas) são encaminhados ao nosso e-mail por meio do serviço FormSubmit, utilizado exclusivamente como transporte da mensagem, sem cookies ou rastreamento no site.</li>
       </ul>
       <div class="hl">
         <span class="hl-tag">Sobre cookies e medição de audiência</span>
@@ -321,28 +321,30 @@ footer{background:var(--footer);color:#8ba098}
       </div>
       <div class="foot-col">
         <h4>Navegação</h4>
-        <a href="/#problema">O problema</a>
-        <a href="/#solucao">Solução</a>
-        <a href="/#conformidade">Conformidade</a>
-        <a href="/#arquitetura">Arquitetura</a>
-        <a href="/#publicos">Para quem</a>
+        <a href="/plataforma/">Plataforma</a>
+        <a href="/api/">API</a>
+        <a href="/confianca/">Central de Confiança</a>
+        <a href="/politica-de-privacidade/">Política de Privacidade</a>
       </div>
       <div class="foot-col">
         <h4>Contato</h4>
         <a href="mailto:contato@pilastra.com.br">contato@pilastra.com.br</a>
+        <a href="mailto:dpo@pilastra.com.br">dpo@pilastra.com.br</a>
         <a href="https://wa.me/5511987050864">WhatsApp comercial</a>
         <span>Avenida Giovanni Gronchi, 6195 – Sala 310<br>Vila Andrade, São Paulo · SP · 05724-003</span>
       </div>
       <div class="foot-col">
         <h4>Legal</h4>
-        <a href="/politica-de-privacidade/">Política de Privacidade</a>
         <span>Vrummm Tecnologia LTDA</span>
         <span>CNPJ 37.442.535/0001-22</span>
       </div>
     </div>
     <div class="foot-legal">
       <p>© 2026 Pilastra · Vrummm Tecnologia LTDA · CNPJ 37.442.535/0001-22<br>Avenida Giovanni Gronchi, 6195 – Sala 310, Vila Andrade, São Paulo · SP · 05724-003</p>
-      <svg width="22" height="22" viewBox="0 0 48 48" aria-hidden="true"><rect x="10.5" y="6.8" width="13.5" height="3" rx="0.7" fill="#2a4a43"/><rect x="12.3" y="9.8" width="10" height="1.9" fill="#2a4a43"/><rect x="13.5" y="11.7" width="8" height="23.3" fill="#2a4a43"/><path d="M21.5 8.4 C33.8 8.4 40.2 13.4 40.2 19.2 C40.2 25 33.8 29.4 21.5 29.4 L21.5 23.8 C28.2 23.8 33.6 22.2 33.6 19.2 C33.6 16.2 28.2 14.3 21.5 14.3 Z" fill="#2a4a43"/><rect x="12.3" y="35" width="10" height="2.1" fill="#2a4a43"/><rect x="10.3" y="37.1" width="14.5" height="3.1" rx="0.8" fill="#b85c33"/></svg>
+      <span class="foot-selo">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V5z"/><polyline points="9 12 11 14 15 10"/></svg>
+        Processamento e registros em datacenters no Brasil
+      </span>
     </div>
   </div>
 </footer>
