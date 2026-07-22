@@ -12,3 +12,10 @@ node_modules/
 # Logs e temporários
 *.log
 *.tmp
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
